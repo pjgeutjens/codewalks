@@ -13,3 +13,5 @@ RUN sudo pwsh -c "&{Install-Module -Name Az -AllowClobber -Scope AllUsers -Force
 
 # install azure cli
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+CMD usr/bin/pwsh
