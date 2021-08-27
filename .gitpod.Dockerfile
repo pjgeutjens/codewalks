@@ -1,7 +1,7 @@
 FROM gitpod/workspace-dotnet
 
 # Install system components
-RUN sudo apt-get update && apt-get install -y curl apt-transport-https
+RUN sudo apt-get update && sudo apt-get install -y curl apt-transport-https
 
 # Import the public repository GPG keys
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
