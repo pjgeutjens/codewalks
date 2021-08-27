@@ -1,1 +1,2 @@
-image: mcr.microsoft.com/azure-cloudshell
+image: 
+  file: .gitpod.Dockerfile
