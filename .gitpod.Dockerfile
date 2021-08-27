@@ -9,7 +9,7 @@ RUN sudo apt-get update \
 && sudo add-apt-repository universe \
 && sudo apt-get install -y powershell
 
-RUN pwsh -c "&{Install-Module -Name Az -AllowClobber -Scope AllUsers -Force}"
+RUN sudo pwsh -c "&{Install-Module -Name Az -AllowClobber -Scope AllUsers -Force}"
 
 # install azure cli
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
